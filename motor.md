@@ -33,3 +33,15 @@ Now we have the necessary motor wattage, it would be tempting to grab any cheap 
 Like mentioned earlier, I decided on a brushless RC car motor. These are commonly sold based on two numbers, wattage and kV rating. Complicating matters, they usually don't explicitly give a torque rating, so more math is in order.
 
 The kV rating basically tells how fast the motor will spin based on how much voltage is applied. More volts = more faster. In fact, 1 volt will spin the motor at the kV rating, 2 volts will spin it at twice, etc. So, to find how fast the motor will spin, we just need to use this formula: `Speed = kV rating * voltage`.
+
+To find the torque of the motor, we can use the formula `Torque (lb*ft) = wattage * 7 / rpm`.
+
+I started shopping around for motors, and found [this] one from Amazon. It's 1800 watts (way more than the theoretical 400 we found earlier), and has a kV rating of 2250rpm/volt.  I will be running the motor at 12v (discussed more in the battery section), so I can expect `12v * 2250rpm/v = 27,000 rpm` max speed. At that speed, `1800 * 7 / 27000 = .46 lb*ft` of torque. So, this motor spins quite fast but doesn't have a lot of turning force. If it was attached directly to the hub of the bike, the bike wouldn't move because the torque is way too low. In a world without friction, it would probably start to move, but absurdly fast (about 2088 mph acutally). Of course, we would never really get that fast. So, because we have plenty of wattage, we just need to convert some of that speed to torque. We can use a magical thing called gears to do that!
+
+#### Gear Ratios
+
+Gears do exactly what we need to do, with a reasonable formula: the ratio of teeth (or circumfrence) is the same as the speed ratio, and the reciprocal of the torque ratio. What that means is if gear 1 is twice as big as gear 2, gear 2 will spin twice as fast as gear 1, yet have double the torque. Perfect! Trading speed for torque.
+
+In our case, we have perfect gears: a tiny motor shaft, and a huge bike tire. Of course, I'll put some sort of wheel on the motor shaft so I get a little more friction. Jumping ahead a little, but my original plan was to directly drive the wheel with the motor just rubbing the sidewall. This lead to problems down the road, but for the sake of the math, I'll continue. Anyway, the circumfrance of my bike tire is just 26 inches (diameter) times pi, or 81.68 inches. The circumfrance of a small wheel I found was only 1.3 inches. That's means that the the speed will be reduced by a factor of 62, while the torque will be multiplied by a factor of 62. So now, our original speed of 2088mph is now only 33mph. Much better and more reasonable!
+
+Also, the torque is quite a bit more. Now, it's 28.52 lb*
