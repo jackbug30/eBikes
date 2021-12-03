@@ -44,4 +44,10 @@ Gears do exactly what we need to do, with a reasonable formula: the ratio of tee
 
 In our case, we have perfect gears: a tiny motor shaft, and a huge bike tire. Of course, I'll put some sort of wheel on the motor shaft so I get a little more friction. Jumping ahead a little, but my original plan was to directly drive the wheel with the motor just rubbing the sidewall. This lead to problems down the road, but for the sake of the math, I'll continue. Anyway, the circumfrance of my bike tire is just 26 inches (diameter) times pi, or 81.68 inches. The circumfrance of a small wheel I found was only 1.3 inches. That's means that the the speed will be reduced by a factor of 62, while the torque will be multiplied by a factor of 62. So now, our original speed of 2088mph is now only 33mph. Much better and more reasonable!
 
-Also, the torque is quite a bit more. Now, it's 28.52 lb*
+Also, the torque is quite a bit more. Now, it's 28.52 pound feet, much more reasonable.
+
+So, all that being said, I chose the motor I did for the following reasons:
+1. The theoreticl maximum speed (33mph) is higher than originally wanted.
+2. The wattage (1800) is much more than the bare theoretical minimum.
+3. It's a waterproof motor.
+4. It's brushless.
