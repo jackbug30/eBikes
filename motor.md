@@ -52,9 +52,14 @@ So, all that being said, the selected motor was selected for these reasons:
 
 ## Speed Controller
 
-Finally, the motor needs a controller. Because it is brushelss, power cannot be directly applied as the internal wiring is more complex than a simple brushed motor. The motor is 2250W and will be driven at 12v. Watts can also be calculated based on voltage and current using the formula `wattage = volts * amps`, or `amps = wattage / volts`. As such, the maximum current draw of the selected motor is `187.5A = 2250W / 12V`.
+Finally, the motor needs a controller. Because it is brushelss, power cannot be directly applied as the internal wiring is more complex than a simple brushed motor. The motor is 1800W and will be driven at 12v. Watts can also be calculated based on voltage and current using the formula `wattage = volts * amps`, or `amps = wattage / volts`. As such, the maximum current draw of the selected motor is `150A = 1800W / 12V`.
 
 Having a speed controller rated for that current would be ideal, however they proved to be prohibitively expensive for a prototype. A better option was [this](https://www.amazon.com/gp/product/B07JZVZJKS/ref=ppx_yo_dt_b_asin_title_o06_s02?ie=UTF8&psc=1) speed controller, also located on Amazon.com. It is waterproof (perfect for a bicylce) and programmable. This means that a [programming device](https://www.amazon.com/gp/product/B08FCF8JHV/ref=ppx_yo_dt_b_asin_title_o05_s00?ie=UTF8&psc=1) can be used to tweak various parameters, such as braking power and acceleration. It can only provide 80A, however. That said, 80A at 12V is 960W, still much higher than our theoretical minimum. It also provides a simple upgrade path in the future; a new speed controller can be swapped in to provde over twice the performance without needing an entirely new motor and drivetrain.
 
+### Throttle Input
+
+The final piece of the motor control system is a mechanism to command the speed controller to run at a specific speed. Because the selected controller is intended for a remote control car, is uses standard RC servo signalling [^2]. The intention in this project is to eventually have a complete electrical control system (providing battery charge, speed, current draw, etc) to the rider, which can also be used as a throttle input (more detail in the finishing touches section). For the prototype however, this is not necessary, so a simple [RC servo tester](https://www.amazon.com/gp/product/B07TQSKLBK/ref=ppx_yo_dt_b_asin_title_o05_s00?ie=UTF8&psc=1) was selected. It provides a simple knob to control motor speed.
+
 
 [^1]: "Brushless Motor Efficiency and Constants -", _Radiocontrolinfo.com_, 2021. [Online]. Available: https://www.radiocontrolinfo.com/brushless-motor-efficiency/. [Accessed: 08- Dec- 2021]
+[^2]: "Servo control - Wikipedia", _En.wikipedia.org_, 2021. [Online]. Available: https://en.wikipedia.org/wiki/Servo_control. [Accessed: 08- Dec- 2021]
