@@ -1,30 +1,28 @@
 # Motor Sizing
 
-The motor is the primary component, so the rest of the system should be built around it. As such, we'll start by talking about it.
+The motor is the primary component, so the rest of the system should be built around it. As such, it's not a bad idea to start with it.
 
 ## Motor Types
 
-There are a couple types of motors, two of which I considered:
+There are a couple types of motors, two of which were considered:
 1. Brushed motors. Simple, but they require literal brushes inside to transfer power which could wear out. Also, they aren't as efficient as brushless motors.
 2. Brushless motors. More complex, and more efficient. Another nice feature is that they are widely available in different sizes for RC cars, and can be waterproof (quite useful for a bike that can ride in the rain). For that reason, I decided up front to use a brushless motor.
 
 ## Bike Physics
 
-In my application, I am aiming for a bike that can be driven as if it was an electric motor cycle, ie with a powerful enough motor to accelerate from a stop and maintain a reasonable speed. Others may be looking for more performance, or perhaps less (just a simple assist to help get up hills). Either way, we must start by figuring out how much energy we must exert to move me and the bike.
+For this example, the aim was for a bike that can be driven as if it was an electric motor cycle, ie with a powerful enough motor to accelerate from a stop and maintain a reasonable speed. Others may be looking for more performance, or perhaps less (just a simple assist to help get up hills). Either way, the process must start by figuring out how much energy we must exert to move me and the bike.
 
 ### Motor Wattage
 
 To find how much energy it takes to move, assume the bike and rider are one. If we put some energy into that object (whether by pedaling or using a motor), that energy has to go somewhere and will move us. We just need to find out how much energy.
 
-For my application, because I want to accelerate from a stop up to say, 20mph, so I can ride at a reasonable speed on the road. My bike and I also weigh about 185 pounds. Because we're talking about adding energy to our bike, let's find the energy at 0mph and 20mph. Using the formula `E=.5mv^2` (energy [in joules] = .5 * mass [kilograms] * velocity [meters per second] squared), we find the energy in a nomoving bicycle to be 0 J, and a 20mph (8.9m/s), 185 lb (83.9kg) bike to have about 3353 joules. Finding the difference between the two, we know that to make a bike move at 20mph, we must add 3353 joules to it.
+For this example build, assume the rider can accelerate from a stop to 20mph to ride at a reasonable speed on the road. The bike and rider weigh about 185 pounds. Because the current concern is with energy, find the energy at 0mph and 20mph. Using the formula `E=.5mv^2` (energy [in joules] = .5 * mass [kilograms] * velocity [meters per second] squared), we find the energy in a nomoving bicycle to be 0 J, and a 20mph (8.9m/s), 185 lb (83.9kg) bike to have about 3353 joules. Finding the difference between the two, we know that to make a bike move at 20mph, we must add 3353 joules to it.
 
-Finally, I want to be able to accelerate from 0 to 20mph in 10 seconds. There's a cool unit called the Watt, which represents how fast energy is flowing. We know that it takes 3353 joules to accelerate the bike. If we wanted to accelerate really slowly, we could pump energy in slowly (low wattage), or fast to accelerate fast (high wattage). The nice thing is that the formula for wattage is just `Wattage = Joules / Seconds`. Plugging our numbers in, we get `335W = 3353J/10S`.
+Finally, the acceleration. In the example, the desired acceleration is from 0 to 20mph in 10 seconds. There's a neat unit called the Watt, which represents how fast energy is flowing. It takes 3353 joules to accelerate the bike (from the previous step). If that energy was added very slowly (a low wattage), it would still be added, just taking a long time. On the other hand, adding the energy very fast would result in faster acceleration. The formula for wattage is quite simple: `Wattage = Joules / Seconds`. Plugging in the example numbers, we get `335W = 3353J/10S`.
 
-Just a note, this is a quite simplified way to work out the math, as it completely ignores friction and air resistance. But, it's a good starting point. Lets count for some of those other issues now:
+Just a note, this is a quite simplified way to work out the math, as it completely ignores friction and air resistance. But, it's a good starting point.
 
-This simple math tells us that a bike moving at a constant speed doesn't change in energy, so we won't have to add any to it to keep it going. We know intuitively that this is wrong because on a flat road you still have to pedal occasionally, but it turns out that a bike at this weight will take about 250 watts to maintain 20mph. That number is lower than our earlier 335, which is nice.
-
-Finally, electric motors are not completely efficient, so we'll have to put more energy into it than we can get out. Brushless motors are about 80% efficient, so we will need a motor 120% more powerful than we expect. As such, assuming these numbers, we'll need a motor `335W*1.2=402W`. Now, this is a theoretical minimum number, so I plan to use a motor quite a bit more powerful, because more power can't hurt.
+Finally, electric motors are not completely efficient, so more energy will have to be used than expected. Brushless motors are about 80% efficient[^1], so the motor will need to be 125% more powerful than expected. As such, assuming these numbers, the actual motor wattage will need to be `335W*1.2=402W`. Now, this is a theoretical minimum number, so it will be treated as an absolute minimum. Increasing wattage will increase acceleration, which is desirable.
 
 ### Motor Specs
 
@@ -51,3 +49,6 @@ So, all that being said, I chose the motor I did for the following reasons:
 2. The wattage (1800) is much more than the bare theoretical minimum.
 3. It's a waterproof motor.
 4. It's brushless.
+
+
+[^1]: "Brushless Motor Efficiency and Constants -", _Radiocontrolinfo.com_, 2021. [Online]. Available: https://www.radiocontrolinfo.com/brushless-motor-efficiency/. [Accessed: 08- Dec- 2021]
