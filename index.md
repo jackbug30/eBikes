@@ -1,6 +1,6 @@
 # Building Your Own Electric Bicycle
 
-This is a DIY project to upgrade a normal bicycle to an electric one in an inexspensive and simple way. It follows the progress and various approaches used to design an e-bike in the hope that others can gain useful info from it.
+This is a DIY project to upgrade a normal bicycle to an electric one in an inexpensive and simple way. It follows the progress and various approaches used to design an e-bike in the hope that others can gain useful info from it.
 
 ## Audience
 
