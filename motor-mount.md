@@ -26,7 +26,7 @@ Another option currently being pursued: adding another chain to drive the existi
 
 ## Direct Spoke Drive
 
-![Wood gear engaging spokes](spoke_engage.heic)
+![Wood gear engaging spokes](spoke_engage.jpg)
 
 Figure 3. Approximate placement of the motor with a prototype wooden gear. Note: the bike is upside down in this image.
 
