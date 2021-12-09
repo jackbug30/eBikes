@@ -8,7 +8,7 @@ Problems arose during this step of the process, so here are the highlights of ea
 
 ![Direct contact mounting photo](direct.jpg)
 
-Figure 1. Motor mounted to bicycle frame with direct contact method. Small wheel on motor shaft ommitted for clarity.
+Figure 1. Motor mounted to bicycle frame with direct contact method. Small wheel on motor shaft ommitted for clarity. The mount proved too flexible, so holes were never drilled into frame, however, in a permanent installation the bracket would be bolted to the frame. Also, the poor angle of motor-to-tire; ideally the motor shaft would be perpendicular to tire.
 
 This was the original plan: to use a small wheel on the motor to directly touch the tire. It was assumed that a spring could provide an incredible amount of clamping force and thus friction, however, it proved difficult to solidly mount the motor. Because of this, it was hard to control the clamping force. The speficic combination of motor and controller means that the motor does not start as gradually as anticipated; it jumps up to a high speed. Without enogh friction, the motor spun without turning the tire; in fact, it burned a small hole in the tire's sidewall, destroying it.
 
@@ -30,6 +30,6 @@ Another option currently being pursued: adding another chain to drive the existi
 
 Figure 3. Approximate placement of the motor with a prototype wooden gear. Note: the bike is upside down in this image.
 
-This is a final method, explored simply because if is similar to the simplicty of the direct contact method except it does not rely on friction. A special gear would be made to mount on the motor, which would in turn engage the spokes. The advantage is its simplicity: a prototype gear was made out of wood, and the motor does not need an additional chain and tensioning device, like the chain methods. However, it proved difficult to correctly cut the gear geometry and the gear ratio is quite poor. Finally, the spokes are strongest at the tip (closest to the wheel), but this method would require one spoke to be under the full drive force at a time, which would probably cause the spokes to fail. Plus, a wood gear is likely to chip or wear away faster than a metal one.
+This is a final method, explored simply because if is similar to the simplicty of the direct contact method except it does not rely on friction. A special gear would be made to mount on the motor, which would in turn engage the spokes. The advantage is its simplicity: a prototype gear was made out of wood, and the motor does not need an additional chain and tensioning device, like the chain methods. However, it proved difficult to correctly cut the gear geometry and the gear ratio is quite poor. Finally, although the spokes are strongest at the tip (closest to the wheel), this method would require one spoke to be under the full drive force at a time, which would probably cause the spokes to fail. Plus, a wood gear is likely to chip or wear away faster than a metal one, and it would be more difficult with simple tools to make a metal gear.
 
 [^1]: _Gas bike kit_. [Online]. Available: https://cdn.shopify.com/s/files/1/1121/0508/products/gasbike_racer_motorized_bike_MAIN_PHOTO.jpg?v=1579577178. [Accessed: 09- Dec- 2021]
