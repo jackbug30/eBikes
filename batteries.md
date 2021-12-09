@@ -1,5 +1,7 @@
 # Battery Selection
 
+[Home](index) | [Motor size](motor) | Batteries | [Motor mounting](motor-mount) | [Final assembly](final-assembly)
+
 There are lots of battery choices, some of which were considered.
 
 ## Lead Acid
