@@ -41,6 +41,7 @@ Knowing this, the search for a motor started. [This](https://www.amazon.com/gp/p
 #### Gear Ratios
 
 ![Gears spinning animation](https://upload.wikimedia.org/wikipedia/commons/1/14/Gears_animation.gif)
+
 Figure 1. Two meshed gears, demonstrating a difference in speed [^2].
 
 Gears do exactly that: trade speed and torque, with a reasonable formula: the ratio of teeth (or circumfrence) is the same as the speed ratio, and the reciprocal of the torque ratio. What that means is if gear 1 is twice as big as gear 2, gear 2 will spin twice as fast as gear 1, yet have half the torque. Perfect! Trading speed for torque.
