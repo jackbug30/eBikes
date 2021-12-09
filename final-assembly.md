@@ -1,5 +1,7 @@
 # Final Assembly
 
+[Home](index) | [Motor size](motor) | [Batteries](batteries) | [Motor mounting](motor-mount) | Final assembly
+
 FInally, final assembly.
 
 ## Battery Mounting
