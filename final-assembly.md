@@ -24,6 +24,10 @@ Thinner, 22 guage wire was used to extent the wires from the servo tester to the
 
 Zip ties were used to hold the wire to the frame.
 
+![Wires zip tied](wires.jpg)
+
+Figure 1. Wires and speed controller zip tied to frame.
+
 ## Upgrades
 
 An all-in-one management system is planned. Currently, there is no battery guage, so the batteries will die with little warning. Also, there is no speed display. It would be great to build a simple controller for these with a microcontroller; it could easily detect the battery voltage and convert that to charge percentage. The speed could be figured if a magnet was mounted on one of the wheels, and a hall effect sensor (magnet sensor) on the frame; counting how many times per second the magnet passes the sensor can be converted to RPM, which can in turn obe converted to speed based on the wheel's diameter. Finally, a small microcontroller would likely have enough power remaining to convert a more permanent potentiometer to the proper signal for the speed controller, eliminating the need for the servo tester.
