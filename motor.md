@@ -40,6 +40,9 @@ Knowing this, the search for a motor started. [This](https://www.amazon.com/gp/p
 
 #### Gear Ratios
 
+![Gears spinning animation](https://upload.wikimedia.org/wikipedia/commons/1/14/Gears_animation.gif)
+Figure 1. Two meshed gears, demonstrating a difference in speed [^2].
+
 Gears do exactly that: trade speed and torque, with a reasonable formula: the ratio of teeth (or circumfrence) is the same as the speed ratio, and the reciprocal of the torque ratio. What that means is if gear 1 is twice as big as gear 2, gear 2 will spin twice as fast as gear 1, yet have half the torque. Perfect! Trading speed for torque.
 
 In this case, the gear ratios are perfect: a tiny motor shaft, and a huge bike tire. Jumping ahead, the original prototype plan was to directly drive the bike tire with the motor shaft. This lead to problems (discussed in the motor mounting section), but for the sake of completeness, this example will be worked out. Anyway, the circumfrance of the bike tire is just 26 inches (diameter) times pi, or 81.68 inches. The circumfrance of a small wheel (intended to be installed on the motor shaft) was only 1.3 inches. That's means that the the speed will be reduced by a factor of 62, while the torque will be multiplied by a factor of 62. So now, the original top speed of 2088mph is now only 33mph. Much better and more reasonable!
@@ -60,8 +63,9 @@ Having a speed controller rated for that current would be ideal, however they pr
 
 ### Throttle Input
 
-The final piece of the motor control system is a mechanism to command the speed controller to run at a specific speed. Because the selected controller is intended for a remote control car, is uses standard RC servo signalling [^2]. The intention in this project is to eventually have a complete electrical control system (providing battery charge, speed, current draw, etc) to the rider, which can also be used as a throttle input (more detail in the finishing touches section). For the prototype however, this is not necessary, so a simple [RC servo tester](https://www.amazon.com/gp/product/B07TQSKLBK/ref=ppx_yo_dt_b_asin_title_o05_s00?ie=UTF8&psc=1) was selected. It provides a simple knob to control motor speed.
+The final piece of the motor control system is a mechanism to command the speed controller to run at a specific speed. Because the selected controller is intended for a remote control car, is uses standard RC servo signalling [^3]. The intention in this project is to eventually have a complete electrical control system (providing battery charge, speed, current draw, etc) to the rider, which can also be used as a throttle input (more detail in the finishing touches section). For the prototype however, this is not necessary, so a simple [RC servo tester](https://www.amazon.com/gp/product/B07TQSKLBK/ref=ppx_yo_dt_b_asin_title_o05_s00?ie=UTF8&psc=1) was selected. It provides a simple knob to control motor speed.
 
 
 [^1]: "Brushless Motor Efficiency and Constants -", _Radiocontrolinfo.com_, 2021. [Online]. Available: https://www.radiocontrolinfo.com/brushless-motor-efficiency/. [Accessed: 08- Dec- 2021]
-[^2]: "Servo control - Wikipedia", _En.wikipedia.org_, 2021. [Online]. Available: https://en.wikipedia.org/wiki/Servo_control. [Accessed: 08- Dec- 2021]
+[^2]: _Two meshing gears transmit rotational motion.._ 2017 [Online]. Available: https://upload.wikimedia.org/wikipedia/commons/1/14/Gears_animation.gif. [Accessed: 09- Dec- 2021]
+[^3]: "Servo control - Wikipedia", _En.wikipedia.org_, 2021. [Online]. Available: https://en.wikipedia.org/wiki/Servo_control. [Accessed: 08- Dec- 2021]
