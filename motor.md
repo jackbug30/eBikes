@@ -1,5 +1,7 @@
 # Motor Sizing
 
+[Home](index) | Motor size | [Batteries](batteries) | [Motor mounting](motor-mount) | [Final assembly](final-assembly)
+
 The motor is the primary component, so the rest of the system should be built around it. As such, it's not a bad idea to start with it.
 
 ## Motor Types
