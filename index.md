@@ -10,9 +10,8 @@ This site is not a tutorial or walkthrough with exact building steps and shoppin
 
 This site is organized into several pages, each going over a different topic. Again, this is meant as a high level overview, so it is recommended to read the entire site before you start so you have a full plan from the beginning.
 
-1. [Index](index)-This page. Basic overview of project.
+1. Home-This page. Basic overview of project.
 2. [Motor size](motor)-Physics behind motor selection and speed controller.
 3. [Batteries](batteries)-Weighing different battery options.
 4. [Motor mounting](motor-mount)-How the motor is mounted to the bike and drivetrain.
 5. [Final assembly](final-assembly)-Battery mounting/final wiring
-6. 
