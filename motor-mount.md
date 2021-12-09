@@ -6,6 +6,10 @@ Problems arose during this step of the process, so here are the highlights of ea
 
 ## Direct Contact
 
+![Direct contact mounting photo](direct.jpg)
+
+Figure 1. Motor mounted to bicycle frame with direct contact method. Small wheel on motor shaft ommitted for clarity.
+
 This was the original plan: to use a small wheel on the motor to directly touch the tire. It was assumed that a spring could provide an incredible amount of clamping force and thus friction, however, it proved difficult to solidly mount the motor. Because of this, it was hard to control the clamping force. The speficic combination of motor and controller means that the motor does not start as gradually as anticipated; it jumps up to a high speed. Without enogh friction, the motor spun without turning the tire; in fact, it burned a small hole in the tire's sidewall, destroying it.
 
 ## Chain Drive
