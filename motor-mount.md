@@ -1,5 +1,7 @@
 # Motor Mounting
 
+[Home](index) | [Motor size](motor) | [Batteries](batteries) | Motor mounting | [Final assembly](final-assembly)
+
 Problems arose during this step of the process, so here are the highlights of each considered mounting method.
 
 ## Direct Contact
