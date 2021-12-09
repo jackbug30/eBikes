@@ -66,7 +66,6 @@ Having a speed controller rated for that current would be ideal, however they pr
 
 The final piece of the motor control system is a mechanism to command the speed controller to run at a specific speed. Because the selected controller is intended for a remote control car, is uses standard RC servo signalling [^3]. The intention in this project is to eventually have a complete electrical control system (providing battery charge, speed, current draw, etc) to the rider, which can also be used as a throttle input (more detail in the finishing touches section). For the prototype however, this is not necessary, so a simple [RC servo tester](https://www.amazon.com/gp/product/B07TQSKLBK/ref=ppx_yo_dt_b_asin_title_o05_s00?ie=UTF8&psc=1) was selected. It provides a simple knob to control motor speed.
 
-
 [^1]: "Brushless Motor Efficiency and Constants -", _Radiocontrolinfo.com_, 2021. [Online]. Available: https://www.radiocontrolinfo.com/brushless-motor-efficiency/. [Accessed: 08- Dec- 2021]
 [^2]: _Two meshing gears transmit rotational motion.._ 2017 [Online]. Available: https://upload.wikimedia.org/wikipedia/commons/1/14/Gears_animation.gif. [Accessed: 09- Dec- 2021]
 [^3]: "Servo control - Wikipedia", _En.wikipedia.org_, 2021. [Online]. Available: https://en.wikipedia.org/wiki/Servo_control. [Accessed: 08- Dec- 2021]
