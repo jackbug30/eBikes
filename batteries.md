@@ -6,21 +6,33 @@ There are lots of battery choices, some of which were considered.
 
 ## Lead Acid
 
+![Lead acid battery](https://www.wirtzusa.com/wp-content/uploads/2017/06/leadacidbattery.jpg)
+
+Figure 1. A typical sealed lead acid battery [^1].
+
 Lead Acid batteries are simple, in fact most car batteries are lead acid. They commonly come as sealed, maintenance free batteries, which offer many advantages. They are already in a hard plastic case, can be mounted in any orientation, and are easy to charge with a simple off the shelf charger.
 
-On the negative, they aren't super power dense[^1]. It takes large lead acid batteries to hold the same energy as some of the other options. Also, if they are damaged, they will leak battery acid and may freeze in extreme cold (because they are full of liquid).
+On the negative, they aren't super power dense[^2]. It takes large lead acid batteries to hold the same energy as some of the other options. Also, if they are damaged, they will leak battery acid and may freeze in extreme cold (because they are full of liquid).
 
 ## Lithium
 
-Lithium batteries are great because they pack much more energy into a smaller package[^1].
+![Lithium Polymer battery](https://cdn-global-hk.hobbyking.com/media/catalog/product/cache/1/image/660x415/17f82f742ffe127f42dca9de82fb58b1/1/7/176455_9067000281-0.jpg)
 
-However, they are much more difficult to charge than lead acid: to do it properly, each cell needs to be balance charged. This means a big, slow, specialized charger. Also, they are quite dangerous. They do not always come in a hard plastic case like lead acid [here](https://www.towerhobbies.com/product/11.1v-3200mah-3s-30c-lipo-battery-ec3/EFLB32003S30.html) is an example. Additionally, lithium batteries explode or burst into flames when damaged or overheated[^2].
+Figure 2. An RC lithium polymer battery [^3].
+
+Lithium batteries are great because they pack much more energy into a smaller package[^2].
+
+However, they are much more difficult to charge than lead acid: to do it properly, each cell needs to be balance charged. This means a big, slow, specialized charger. Also, they are quite dangerous. They do not always come in a hard plastic case like lead acid [here](https://www.towerhobbies.com/product/11.1v-3200mah-3s-30c-lipo-battery-ec3/EFLB32003S30.html) is an example. Additionally, lithium batteries explode or burst into flames when damaged or overheated[^4].
 
 ## Ni-Cd and Ni-MH
 
-These chemistries offer some advantages over lead acid (primarily, they are more energy dense) and potentially less dangerous than lithium[^1].
+![A range of nickel cadmium and nickel metal hydride cells](https://5.imimg.com/data5/YV/HF/MY-3703403/pb050009-500x500.jpg)
 
-However, they commonly come in small cells that would have to be wired together. Additionally, they may develop a 'memory' where they lose capacity over time if improperly used, although different sources indicate this is not always the case[^3].
+Figure 3. A range of Ni-Cd and Ni-MH cells [^5]
+
+These chemistries offer some advantages over lead acid (primarily, they are more energy dense) and potentially less dangerous than lithium[^2].
+
+However, they commonly come in small cells that would have to be wired together. Additionally, they may develop a 'memory' where they lose capacity over time if improperly used, although different sources indicate this is not always the case[^6].
 
 ## Decision: lead acid
 
@@ -36,11 +48,14 @@ The final characteristic of a battery is the capacity, telling how much power it
 
 Ah can be easily converted to Wh (watt hours) by simply multiplying by the battery voltage, in this case 12v, so that we can use watts instead of amps, which simplifies the next step; `Wh rating = watts drawn * hours drawn`
 
-The average expected power consumption of a bike at 20mph is about 180 watts (this accounts for air resistance, which was ignored earlier)[^4]. This number is assuming no hills, so the true number is likely much higher. However, it gives a reasonable datapoint to work from. It would be great, for the prototype, to be able to ride for a full hour without having to recharge. So, using the run time formula, `180 watts drawn * 1 hour drawn = 180Wh`. Now, converting that to Ah (`180Wh / 12v`), a total Ah rating of 15Ah is necessary.
+The average expected power consumption of a bike at 20mph is about 180 watts (this accounts for air resistance, which was ignored earlier)[^7]. This number is assuming no hills, so the true number is likely much higher. However, it gives a reasonable datapoint to work from. It would be great, for the prototype, to be able to ride for a full hour without having to recharge. So, using the run time formula, `180 watts drawn * 1 hour drawn = 180Wh`. Now, converting that to Ah (`180Wh / 12v`), a total Ah rating of 15Ah is necessary.
 
 Finding a single 12v, 15Ah battery was difficult, but it was easy to find smaller batteries, specifically [these](https://www.amazon.com/dp/B00K8V30D0?psc=1&ref=ppx_yo2_dt_b_product_details). Each is rated for 7.2Ah, but if they are attached in parallel, the total rating is 14.4Ah, quite close to the desired 15Ah. For this reason, two of these batteries were purchased.
 
-[^1]: L. Keith Araujo - Epec, "Battery Comparison of Energy Density - Cylindrical and Prismatic Cells", _Epectec.com_, 2021. [Online]. Available: https://www.epectec.com/batteries/cell-comparison.html. [Accessed: 08- Dec- 2021]
-[^2]: J. Jhaveri, "[Battery Safety] Top 5 Reasons Why Lithium-Ion Batteries Catch Fire — ION Energy", _ION Energy_, 2021. [Online]. Available: https://www.ionenergy.co/resources/blogs/battery-safety/. [Accessed: 08- Dec- 2021]
-[^3]: "The memory effect in batteries: what it is and how to prevent it | Panasonic eneloop", Panasonic-eneloop.eu, 2021. [Online]. Available: https://www.panasonic-eneloop.eu/en/news/memory-effect-batteries-what-it-and-how-prevent-it. [Accessed: 08- Dec- 2021]
-[^4]: S. Gribble, "An interactive model-based calculator of cycling power vs. speed", _Gribble.org_, 2021. [Online]. Available: https://www.gribble.org/cycling/power_v_speed.html. [Accessed: 08- Dec- 2021]
+[^1]: _SLA._ [Online]. Available: https://www.wirtzusa.com/wp-content/uploads/2017/06/leadacidbattery.jpg. [Accessed: 09- Dec- 2021]
+[^2]: L. Keith Araujo - Epec, "Battery Comparison of Energy Density - Cylindrical and Prismatic Cells", _Epectec.com_, 2021. [Online]. Available: https://www.epectec.com/batteries/cell-comparison.html. [Accessed: 08- Dec- 2021]
+[^3]: _Turnigy 5000mAh_. [Online]. Available: https://cdn-global-hk.hobbyking.com/media/catalog/product/cache/1/image/660x415/17f82f742ffe127f42dca9de82fb58b1/1/7/176455_9067000281-0.jpg. [Accessed: 09- Dec- 2021]
+[^4]: J. Jhaveri, "[Battery Safety] Top 5 Reasons Why Lithium-Ion Batteries Catch Fire — ION Energy", _ION Energy_, 2021. [Online]. Available: https://www.ionenergy.co/resources/blogs/battery-safety/. [Accessed: 08- Dec- 2021]
+[^5]: _Range of cells_. [Online]. Available: https://5.imimg.com/data5/YV/HF/MY-3703403/pb050009-500x500.jpg. [Accessed: 09- Dec- 2021]
+[^6]: "The memory effect in batteries: what it is and how to prevent it | Panasonic eneloop", Panasonic-eneloop.eu, 2021. [Online]. Available: https://www.panasonic-eneloop.eu/en/news/memory-effect-batteries-what-it-and-how-prevent-it. [Accessed: 08- Dec- 2021]
+[^7]: S. Gribble, "An interactive model-based calculator of cycling power vs. speed", _Gribble.org_, 2021. [Online]. Available: https://www.gribble.org/cycling/power_v_speed.html. [Accessed: 08- Dec- 2021]
